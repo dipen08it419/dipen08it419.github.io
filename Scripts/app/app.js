@@ -7,7 +7,7 @@
 /// <reference path="../lib/angular.js" />
 $home = "";
 var app = angular.module('portfolioApp', ['ngRoute'])
-            .config(['$routeProvider', '$locationProvider', '$httpProvider', function ($routeProvider, $locationProvider, $httpProvider) {
+            .config(['$routeProvider', '$locationProvider', '$sceDelegateProvider', function ($routeProvider, $locationProvider, $sceDelegateProvider) {
                 $routeProvider.when('/home', {
                     templateUrl: 'partials/home.html',
                     $home:'home'
@@ -35,9 +35,5 @@ var app = angular.module('portfolioApp', ['ngRoute'])
                 $locationProvider.html5Mode({ enabled: true, requireBase: false });
 
                 //Enable cross domain calls
-                $httpProvider.defaults.useXDomain = true;
-
-                //Remove the header containing XMLHttpRequest used to identify ajax call 
-                //that would prevent CORS from working
-                delete $httpProvider.defaults.headers.common['X-Requested-With'];
+                $sceDelegateProvider.resourceUrlWhitelist(['self', 'http://aspspider.info/dipen08it419/**']);
             }]);
