@@ -7,8 +7,8 @@
 /// <reference path="../lib/angular.js" />
 $home = "";
 var app = angular.module('portfolioApp', ['ngRoute'])
-            .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
-                $routeProvider.when('/', {
+            .config(['$routeProvider', '$locationProvider', '$httpProvider', function ($routeProvider, $locationProvider, $httpProvider) {
+                $routeProvider.when('/home', {
                     templateUrl: 'partials/home.html',
                     $home:'home'
                 }).when('/about', {
@@ -30,7 +30,14 @@ var app = angular.module('portfolioApp', ['ngRoute'])
                 .when('/sitemap', {
                     templateUrl: 'partials/sitemap.html'
                 })
-                .otherwise({ redirectTo: '/' });
+                .otherwise({ redirectTo: '/home' });
 
                 $locationProvider.html5Mode({ enabled: true, requireBase: false });
+
+                //Enable cross domain calls
+                $httpProvider.defaults.useXDomain = true;
+
+                //Remove the header containing XMLHttpRequest used to identify ajax call 
+                //that would prevent CORS from working
+                delete $httpProvider.defaults.headers.common['X-Requested-With'];
             }]);

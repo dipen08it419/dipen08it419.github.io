@@ -9,8 +9,9 @@ var app = angular.module('portfolioApp');
 app.controller('ContactController', ['$scope','$http', function ($scope, $http) {
     $scope.SendMessage = function () {
         if ($scope.emailId && $scope.message) {
+
             $http.post(
-                'AppCode/ContactService.asmx/SaveContact',
+                'http://aspspider.info/dipen08it419/ContactService.svc/Contact',
                     {
                         emailId: $scope.emailId,
                         message: $scope.message
