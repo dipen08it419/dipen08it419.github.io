@@ -8,16 +8,16 @@
 
 	<!-- Mobile site redirection script -->
 	<script type="text/javascript">
-	  <!--
-	  if (screen.width <= 800) {
-		console.log("Is Mobile");
-		if(window.location.toString().indexOf('rbm=false')!=-1){
-			console.log("Redirecting to Mobile");
-			window.location = "http://dipen08it419.github.io/m/index.html";
-		}
-	  }
-	  //-->
-	</script>
+        if (screen.width <= 800) {
+            console.log("Is Mobile");
+            alert(window.location.toString().indexOf('rbm=false'));
+
+            if (window.location.toString().indexOf('rbm=false') == -1) {
+                console.log("Redirecting to Mobile");
+                window.location = "http://dipen08it419.github.io/m/index.html";
+            }
+        }
+    </script>
 
     <!-- including css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
