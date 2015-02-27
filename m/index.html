@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <link rel="shortcut icon" href="./images/devsd_logo.png" />
-
+  
     <!-- including css -->
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <link href="css/site.css" rel="stylesheet" />
@@ -30,15 +30,32 @@
         <div data-role="header">
             <h1>Dipen's Portfolio</h1>
 
-            <a href="#menu" data-icon="grid">Menu</a>
+            <a href="#tab_menu" data-icon="grid">Menu</a>
+        </div>
+
+        <!-- Section : Navbar -->
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-transition="fade" data-icon="home" class="ui-btn-active">Home</a></li>
+                <li><a data-icon="info" data-transition="turn" href="#about">About</a></li>
+                <li><a data-icon="custom" data-transition="pop" class="ui-icon-phone" href="#contact">Contact</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#projects" data-transition="slideup">Projects</a>
+                </li>
+                <li>
+                    <a href="#services" data-transition="slidedown">Services</a>
+                </li>
+            </ul>
         </div>
 
         <!-- Section : Menu Panel -->
-        <div data-role="panel" data-position="left" data-display="overlay" id="menu">
+        <div data-role="panel" data-position="left" data-display="overlay" id="tab_menu">
             <ul data-role="listview">
-                <li><a href="#home" data-transition="flip"> Home</a></li>
+                <li><a href="#home" class="ui-btn ui-btn-active ui-btn-icon-right ui-icon-carat-r" data-transition="flip"> Home</a></li>
                 <li><a href="#about" data-transition="turn"> About</a></li>
-                <li><a href="#contact" data-transition="flow"> Contact</a></li>
+                <li><a href="#contact" data-transition="pop"> Contact</a></li>
                 <li><a href="#projects" data-transition="slideup">Projects</a></li>
                 <li><a href="#services" data-transition="slidedown">Services</a></li>
             </ul>
@@ -96,16 +113,35 @@
             <a onclick="javascript: history.back(-1);" data-icon="back">back</a>
         </div>
 
+        <!-- Section : Navbar -->
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-transition="fade" data-icon="home">Home</a></li>
+                <li><a data-icon="info" data-transition="turn" class="ui-btn-active" href="#about">About</a></li>
+                <li><a data-icon="custom" data-transition="pop" class="ui-icon-phone" href="#contact">Contact</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#projects" data-transition="slideup">Projects</a>
+                </li>
+                <li>
+                    <a href="#services" data-transition="slidedown">Services</a>
+                </li>
+            </ul>
+        </div>
+
         <!-- Section: Content -->
         <div data-role="content">
             <div>
                 <div>
-                    <img src="images/dipen.png" alt="Dipen Shah" class="img-thumbnail img-circle" />
+                    <center>
+                        <img src="images/dipen.png" alt="Dipen Shah" class="img-thumbnail img-circle" />
+                    </center>
                 </div>
 
                 <div>
-                    <h1>Dipen Shah</h1>
-                    <h4>Software Developer and Technology Enthusiast</h4>
+                    <h1 class="text-center">Dipen Shah</h1>
+                    <h4 class="text-center">Software Developer and Technology Enthusiast</h4>
 
                     <p>
                         Dipen Shah was born in Borsad, a town in Gujarat, India. He finished his primary education in Borsad.
@@ -145,6 +181,23 @@
             <h1>Contact Dipen</h1>
 
             <a onclick="javascript: history.back(-1);" data-icon="back">back</a>
+        </div>
+
+        <!-- Section : Navbar -->
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-transition="fade" data-icon="home">Home</a></li>
+                <li><a data-icon="info" data-transition="turn" href="#about">About</a></li>
+                <li><a data-icon="custom" data-transition="pop" class="ui-icon-phone ui-btn-active" href="#contact">Contact</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#projects" data-transition="slideup">Projects</a>
+                </li>
+                <li>
+                    <a href="#services" data-transition="slidedown">Services</a>
+                </li>
+            </ul>
         </div>
 
         <!-- Section: Content -->
@@ -200,6 +253,23 @@
             <a onclick="javascript: history.back(-1);" data-icon="back">back</a>
         </div>
 
+        <!-- Section : Navbar -->
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-transition="fade" data-icon="home">Home</a></li>
+                <li><a data-icon="info" data-transition="turn" href="#about">About</a></li>
+                <li><a data-icon="custom" data-transition="pop" class="ui-icon-phone" href="#contact">Contact</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#projects" class="ui-btn-active" data-transition="slideup">Projects</a>
+                </li>
+                <li>
+                    <a href="#services" data-transition="slidedown">Services</a>
+                </li>
+            </ul>
+        </div>
+
         <!-- Section: Content -->
         <div>
             <div data-role="content">
@@ -248,7 +318,7 @@
         </div>
 
         <!-- Section: Footer -->
-        <div data-role="footer" data-position="fixed" data-fullscreen="true"></div>
+        <div data-role="footer" data-fullscreen="true"></div>
     </div>
 
     <!-- Section : Individual Projects -->
@@ -495,6 +565,23 @@
             <h1>Services</h1>
 
             <a onclick="javascript: history.back(-1);" data-icon="back">back</a>
+        </div>
+
+        <!-- Section : Navbar -->
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-transition="fade" data-icon="home">Home</a></li>
+                <li><a data-icon="info" data-transition="turn" href="#about">About</a></li>
+                <li><a data-icon="custom" data-transition="pop" class="ui-icon-phone" href="#contact">Contact</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#projects" data-transition="slideup">Projects</a>
+                </li>
+                <li>
+                    <a href="#services" class="ui-btn-active" data-transition="slidedown">Services</a>
+                </li>
+            </ul>
         </div>
 
         <!-- Section: Content -->

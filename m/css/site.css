@@ -4,6 +4,29 @@
     Website: http://dipen08it419.github.io/m/index.html
     Description: This file contains css code specific to mobile portfolio site of the author.
 */
+/* Hiding navigation based on mobile or tablet device detection */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 767px) {
+    #tab_menu{
+        display:none;
+        visibility:hidden;
+    }
+    a[href='#tab_menu']{
+        display:none;
+        visibility:hidden;
+    }
+}
+
+/* All other screen sizes will be considered as Tablet */
+@media only screen 
+and (min-device-width : 768px){
+    [data-role="navbar"]{
+        visibility:hidden;
+        display:none;
+    }
+}
 
 /* Style for titles of the page */
 [data-role=title] {
@@ -61,7 +84,10 @@ li a img {
     border:1px solid #777;
     margin:5px;
 }
-
+/* Style for center text */
+.text-center{
+    text-align:center;
+}
 /* Tiny Carousel CSS */
 #slider1 { height: 1%; width:260px; overflow: hidden; padding: 0 0 10px; position:relative; }
 #slider1 .viewport { float:left; width: 260px; height: 260px; overflow: hidden; }
