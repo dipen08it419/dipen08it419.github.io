@@ -1,0 +1,562 @@
+﻿<!--
+
+    File: index.html
+    Author: Dipen Shah
+    Website: http://dipen08it419.github.io/m/index.html
+    Description: This page contains html code for the mobile portfolio of the author.
+
+-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Dipen's Portfoilo</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="shortcut icon" href="./images/devsd_logo.png" />
+
+    <!-- including css -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link href="css/site.css" rel="stylesheet" />
+
+    <!-- including javascripts -->
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="Scripts/lib/jquery.tinycarousel.min.js"></script>
+</head>
+<body>
+    <div id="home" data-role="page">
+        <div data-role="header">
+            <h1>Dipen's Portfolio</h1>
+
+            <a href="#menu" data-icon="grid">Menu</a>
+        </div>
+
+        <!-- Section : Menu Panel -->
+        <div data-role="panel" data-position="left" data-display="overlay" id="menu">
+            <ul data-role="listview">
+                <li><a href="#home" data-transition="flip"> Home</a></li>
+                <li><a href="#about" data-transition="turn"> About</a></li>
+                <li><a href="#contact" data-transition="flow"> Contact</a></li>
+                <li><a href="#projects" data-transition="slideup">Projects</a></li>
+                <li><a href="#services" data-transition="slidedown">Services</a></li>
+            </ul>
+        </div>
+
+        <!-- Section: Content -->
+        <div>
+            <div data-role="content">
+                <div>
+                    <h1 data-role="title">
+                        <img class="inline" src="images/devsd_logo.png" /> Dipen Shah
+                    </h1>
+                    <h4 class="text-muted">Software Developer and Technology Enthusiast</h4>
+
+                    <p>
+                        Dipen Shah is a Softwar developer who lives in Toronto, ON. He is expert in Software, Web, and Android application development. He believes in the philosophy of truth and non-violence. His ideal is ex-President of India, Dr APJ Abdul Kalam.
+                    </p>
+
+                    <a href="#about" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">More about Dipen...</a>
+                </div>
+            </div>
+
+            <div>
+                <center>
+                    <div id="slider1">
+                        <a class="buttons prev" href="#">&#60;</a>
+                        <div class="viewport">
+                            <ul class="overview">
+                                <li>
+                                    <img a src="images/projects/ERP/erp_1.png" />
+                                </li>
+                                <li>
+                                    <img src="images/projects/LMS/lms_1.png" />
+                                </li>
+                                <li>
+                                    <img src="images/projects/WeMeet/wm_1.png" />
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="buttons next" href="#">&#62;</a>
+                    </div>
+                </center>
+            </div>
+        </div>
+
+        <!-- Section: Footer -->
+        <div data-role="footer" data-fullscreen="true"></div>
+    </div>
+
+    <div id="about" data-role="page">
+        <!-- Section: Header -->
+        <div data-role="header">
+            <h1>About Dipen</h1>
+
+            <a onclick="javascript: history.back(-1);" data-icon="back">back</a>
+        </div>
+
+        <!-- Section: Content -->
+        <div data-role="content">
+            <div>
+                <div>
+                    <img src="images/dipen.png" alt="Dipen Shah" class="img-thumbnail img-circle" />
+                </div>
+
+                <div>
+                    <h1>Dipen Shah</h1>
+                    <h4>Software Developer and Technology Enthusiast</h4>
+
+                    <p>
+                        Dipen Shah was born in Borsad, a town in Gujarat, India. He finished his primary education in Borsad.
+                        For higher secondary education, he moved to Vallabh Vidya Nagar. As a boy he always wanted to be an engineer or astronaut, so he
+                        joined engineering college in 2008. During his engineering he was interested in Computers, particularly, in Computing theories and algorithms.
+                        In his four years of Engineering he did several project as a part of academics. He also joined College Automation group within
+                        the college and developed fully functional Library Management System for the college, for which he and his team-mates were
+                        awarded. He achieved Bachelors of Engineering in Information Technology in 2012.
+                    </p>
+                    <p>
+                        Then he worked for local company "Acmatix Solutions Pvt Ltd". Where he learned about more interesting  stuff like Test Driven Development aka TDD,
+                        Tesseract-OCR (open source Optical Character Recognition  framework), and Silverlight. His job as a Junior Software Developer involved maintaining,
+                        testing, and documenting existing software products. In 2013, he left this job for higher studies.
+                    </p>
+                    <p>
+                        In September 2014, he enrolled in Software Engineering Technology program at Centennial College, Toronto to learn more about Software. Here, he
+                        got chance to work in groups for almost all subjects, and gained leadership experience. He also learned latest technologies such as Windows Communication
+                        Foundation (WCF), Android, and latest web development tools and frameworks. During this program he, WeMeet and android based application to find location
+                        of friends nearby. Currently, he is in the last semester of the project, and he is making another android application Smart Grocery, aimed at solving
+                        Grocery Related troubles.
+
+                    </p>
+
+                    <p>
+                        To find out more about my skills, achievements, and awards click <a href="assets/DIPEN_Resume_2014_Web_Developer.pdf" target="_blank">HERE</a> to download my resume.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Footer -->
+        <div data-role="footer" data-fullscreen="true"></div>
+    </div>
+
+    <div id="contact" data-role="page">
+        <div data-role="header">
+            <h1>Contact Dipen</h1>
+
+            <a onclick="javascript: history.back(-1);" data-icon="back">back</a>
+        </div>
+
+        <!-- Section: Content -->
+        <div data-role="content">
+            <div data-role="content">
+                <h2>Dipen Shah</h2>
+                <strong>Toronto, ON Canada</strong>
+                <a data-icon="custom" class="ui-btn ui-icon-phone ui-btn-icon-right" href="tel:+16472787694">Call Dipen</a>
+
+                Follow Dipen:
+
+                <a class="ui-btn-inline" href="http://ca.linkedin.com/pub/dipen-shah/3a/33/18a" target="_blank">
+                    <img class="img-thumbnail" src="images/linkedin.png" alt="" />
+                </a>
+                <a class="ui-btn-inline" href="https://plus.google.com/u/0/+shahdipen419" target="_blank">
+                    <img class="img-thumbnail" src="images/google-plus.png" alt="" />
+                </a>
+                <a class="ui-btn-inline" href="https://twitter.com/_dipen08it419" target="_blank">
+                    <img class="img-thumbnail" src="images/twitter.png" alt="" />
+                </a>
+
+
+            </div>
+
+            <div class="service">
+                <div data-role="title">
+                    <b>Inquiry Form</b>
+                </div>
+                <div data-role="content">
+                    <form name="contactForm" onsubmit="sendMessage(); return false;">
+                        <div>
+                            <label>Email Id</label>
+                            <input id="emailId" type="email" placeholder="Enter your Email Id" required="true" />
+                        </div>
+                        <div>
+                            <label>Message</label>
+                            <textarea rows="5" id="message" placeholder="Enter Message" required="true"></textarea>
+                        </div>
+                        <input type="submit" value="Send Message" />
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Footer -->
+        <div data-role="footer" data-fullscreen="true"></div>
+    </div>
+
+    <div id="projects" data-role="page">
+        <div data-role="header">
+            <h1>Projects</h1>
+
+            <a onclick="javascript: history.back(-1);" data-icon="back">back</a>
+        </div>
+
+        <!-- Section: Content -->
+        <div>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true">
+                    <li>
+                        <a href="#erp">
+                            <img src="images/projects/ERP/erp_1.png" />
+                            <h2>ERP System</h2>
+                            <p>
+                                ERP System was developed as a part of final year project...
+                            </p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#lms">
+                            <img src="images/projects/LMS/lms_1.png" />
+                            <h2>Library Management System</h2>
+                            <p>
+                                Library Management System was developed for My College, ADIT...
+                            </p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#wm">
+                            <img src="images/projects/WeMeet/wm_1.png" />
+                            <h2>We Meet</h2>
+                            <p>
+                                WeMeet is an Android application which allows its user to find...
+                            </p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#bob">
+                            <img src="images/projects/ERP/erp_1.png" />
+                            <h2>BOB - the Builder</h2>
+                            <p>
+                                Bob - the builder, was an application developed by me during...
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section: Footer -->
+        <div data-role="footer" data-position="fixed" data-fullscreen="true"></div>
+    </div>
+
+    <!-- Section : Individual Projects -->
+    <div id="erp" data-role="page">
+        <!-- Section : Header -->
+        <div data-role="header">
+            <h1>ERP System</h1>
+
+            <a onclick="javascript: history.back(-1);" data-icon="back">back</a>
+            <a href="#home" data-icon="home">Home</a>
+        </div>
+
+        <!-- Section: Content -->
+        <div>
+            <div data-role="content">
+                <div>
+                    <h2 data-role="title">ERP System</h2>
+
+                    <div>
+                        ERP System was developed as a part of final year project during my bachelors. It has various modules
+                        required for ERP sytem such as Sales, HR, Production etc.
+
+                        <br /><br />
+                        <strong>Technologies: </strong> C#.NET, MS Reporting, MS SQL Server
+                    </div>
+                    <!-- Image Gallery for the project -->
+                    <div>
+                        <h4 class="subtitle">Gallery</h4>
+
+                        <a href="#erp_1" data-rel="popup" data-position-to="window" data-transition="fade">
+                            <img class="popphoto" src="images/projects/ERP/erp_1.png">
+                        </a>
+                        <a href="#erp_2" data-rel="popup" data-position-to="window" data-transition="fade">
+                            <img class="popphoto" src="images/projects/ERP/erp_2.png">
+                        </a>
+                        <a href="#erp_3" data-rel="popup" data-position-to="window" data-transition="fade">
+                            <img class="popphoto" src="images/projects/ERP/erp_3.png">
+                        </a>
+                        <div data-role="popup" id="erp_1" data-overlay-theme="b" data-theme="b" data-corners="false">
+                            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                            <center>
+                                <img class="popphoto" src="images/projects/ERP/erp_1.png" />
+                            </center>
+                        </div>
+                        <div data-role="popup" id="erp_2" data-overlay-theme="b" data-theme="b" data-corners="false">
+                            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                            <center>
+                                <img class="popphoto" src="images/projects/ERP/erp_2.png" />
+                            </center>
+                        </div>
+                        <div data-role="popup" id="erp_3" data-overlay-theme="b" data-theme="b" data-corners="false">
+                            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                            <center>
+                                <img class="popphoto" src="images/projects/ERP/erp_3.png" />
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Footer -->
+        <div data-role="footer" data-fullscreen="true"></div>
+    </div>
+
+    <div id="lms" data-role="page">
+        <!-- Section : Header -->
+        <div data-role="header">
+            <h1>Library Management System</h1>
+
+            <a onclick="javascript: history.back(-1);" data-icon="back">back</a>
+            <a href="#home" data-icon="home">Home</a>
+        </div>
+
+        <!-- Section: Content -->
+        <div>
+            <div data-role="content">
+                <div>
+                    <h2 data-role="title">Library Management System</h2>
+
+                    <div>
+                        Library Management System was developed for My College, A D Patel Institute of Technology during third year of my
+                        engineering. It has functionalities needed for Library System such as Scan barcode, issue book, audit books etc.
+                        The major functionalities for this reports includes Reporting and Auditing of Library books.
+
+                        <br /><br />
+                        <strong>Technologies: </strong> C#.NET, MS Reporting, MS SQL Server
+                    </div>
+
+                    <!-- Image Gallery for the project -->
+                    <div>
+                        <h4 class="subtitle">Gallery</h4>
+
+                        <a href="#lms_1" data-rel="popup" data-position-to="window" data-transition="fade">
+                            <img class="popphoto" src="images/projects/LMS/lms_1.png">
+                        </a>
+                        <div data-role="popup" id="lms_1" data-overlay-theme="b" data-theme="b" data-corners="false">
+                            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                            <center>
+                                <img class="popphoto" src="images/projects/LMS/lms_1.png" />
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Footer -->
+        <div data-role="footer" data-fullscreen="true"></div>
+    </div>
+
+    <div id="wm" data-role="page">
+        <!-- Section : Header -->
+        <div data-role="header">
+            <h1>WeMeet</h1>
+
+            <a onclick="javascript: history.back(-1);" data-icon="back">back</a>
+            <a href="#home" data-icon="home">Home</a>
+        </div>
+
+        <!-- Section: Content -->
+        <div>
+            <div data-role="content">
+                <div>
+                    <h2 data-role="title">WeMeet</h2>
+
+                    <div>
+                        WeMeet is an Android application which allows its user to find location of friends who are near by the user.
+                        This application used GPS to track the location of contacts in the users phone.
+
+                        <br /><br />
+                        <strong>Technologies: </strong> Android, WCF, MS SQL Server
+                    </div>
+
+                    <!-- Image Gallery for the project -->
+                    <div>
+                        <h4 class="subtitle">Gallery</h4>
+
+                        <a href="#wm_1" data-rel="popup" data-position-to="window" data-transition="fade">
+                            <img class="popphoto" src="images/projects/WeMeet/wm_1.png">
+                        </a>
+                        <a href="#wm_2" data-rel="popup" data-position-to="window" data-transition="fade">
+                            <img class="popphoto" src="images/projects/WeMeet/wm_2.png">
+                        </a>
+                        <a href="#wm_3" data-rel="popup" data-position-to="window" data-transition="fade">
+                            <img class="popphoto" src="images/projects/WeMeet/wm_3.png">
+                        </a>
+                        <div data-role="popup" id="wm_1" data-overlay-theme="b" data-theme="b" data-corners="false">
+                            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                            <center>
+                                <img class="popphoto" src="images/projects/WeMeet/wm_1.png" />
+                            </center>
+                        </div>
+                        <div data-role="popup" id="wm_2" data-overlay-theme="b" data-theme="b" data-corners="false">
+                            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                            <center>
+                                <img class="popphoto" src="images/projects/WeMeet/wm_2.png" />
+                            </center>
+                        </div>
+                        <div data-role="popup" id="wm_3" data-overlay-theme="b" data-theme="b" data-corners="false">
+                            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                            <center>
+                                <img class="popphoto" src="images/projects/WeMeet/wm_3.png" />
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Footer -->
+        <div data-role="footer" data-fullscreen="true"></div>
+    </div>
+
+    <div id="bob" data-role="page">
+        <!-- Section : Header -->
+        <div data-role="header">
+            <h1>BOB - the Builder</h1>
+
+            <a onclick="javascript: history.back(-1);" data-icon="back">back</a>
+            <a href="#home" data-icon="home">Home</a>
+        </div>
+
+        <!-- Section: Content -->
+        <div>
+            <div data-role="content">
+                <div>
+                    <h2 data-role="title">BOB - the Builder</h2>
+
+                    <div>
+                        Bob - the builder, was an application developed by me during Technical Festival at my college.This application
+                        was used by organizer of the event. The event was related to investment in property. The application was used to manage
+                        properties and its owners.
+
+                        <br /><br />
+                        <strong>Technologies: </strong> C#.NET, MS Access
+                    </div>
+
+                    <!-- Image Gallery for the project -->
+                    <div>
+                        <h4 class="subtitle">Gallery</h4>
+
+                        <a href="#bob_1" data-rel="popup" data-position-to="window" data-transition="fade">
+                            <img class="popphoto" src="images/projects/BOB/bob_1.png">
+                        </a>
+                        <a href="#bob_2" data-rel="popup" data-position-to="window" data-transition="fade">
+                            <img class="popphoto" src="images/projects/BOB/bob_2.png">
+                        </a>
+                        <a href="#bob_3" data-rel="popup" data-position-to="window" data-transition="fade">
+                            <img class="popphoto" src="images/projects/BOB/bob_3.png">
+                        </a>
+                        <div data-role="popup" id="bob_1" data-overlay-theme="b" data-theme="b" data-corners="false">
+                            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                            <center>
+                                <img class="popphoto" src="images/projects/BOB/bob_1.png" />
+                            </center>
+                        </div>
+                        <div data-role="popup" id="bob_2" data-overlay-theme="b" data-theme="b" data-corners="false">
+                            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                            <center>
+                                <img class="popphoto" src="images/projects/BOB/bob_2.png" />
+                            </center>
+                        </div>
+                        <div data-role="popup" id="bob_3" data-overlay-theme="b" data-theme="b" data-corners="false">
+                            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                            <center>
+                                <img class="popphoto" src="images/projects/BOB/bob_3.png" />
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Footer -->
+        <div data-role="footer" data-fullscreen="true"></div>
+    </div>
+
+    <!-- Section End : Projects -->
+
+    <div id="services" data-role="page">
+        <!-- Section : Header -->
+        <div data-role="header">
+            <h1>Services</h1>
+
+            <a onclick="javascript: history.back(-1);" data-icon="back">back</a>
+        </div>
+
+        <!-- Section: Content -->
+        <div>
+            <div data-role="content">
+                <div class="service">
+                    <h2 data-role="title">Software Development</h2>
+                    <img src="images/software.png" />
+
+                    <div>
+                        <span>
+                            With overall 5 years of academic experience and 5 months of Industry experience, I've acheived
+                            expertise in developing Software for Windows. During my academics, I have developed various applications
+                            such as Alarm Clock, Sticky Notes, and Asset Management System.
+
+                            <br /><br />
+                            <strong>Technologies: </strong> C#.NET, VB.NET, DevExpress
+                        </span>
+                    </div>
+                </div>
+                <div class="service">
+                    <h2 data-role="title">Web Application Development</h2>
+
+                    <img src="images/Website-development.png" />
+
+                    <div>
+                        <span>
+                            I started web development by learning HTML back in 2009. One of the successful project during my
+                            acedemics, "Library Management System" was in fact a web application in ASP.NET. Today, I have
+                            advanced experience in ASP.NET framework as well as related technologyies such as ASP.NET MVC and
+                            Entity Framewrok. I also have experience in developing light-weight applications with plain old HTML,
+                            CSS, and javascript.
+                            <br /><br />
+                            <strong>Open Source Frameworks:</strong> BootStrap, jQuery, and Angular.js
+
+                        </span>
+                    </div>
+                </div>
+                <div class="service">
+                    <h2 data-role="title">Mobile Development</h2>
+
+                    <img src="images/android.png" />
+
+                    <div>
+                        <span>
+                            In this mobile era, almost everything thing is possible with a mobile device. People are increasingly
+                            using their mobile devices not only to call but to play games, to watch movies, and to track their health.
+                            Having a mobile application or atleast mobile website is must for any business. I have been working with
+                            Android for a year now, and I am an intermediate developer for the platform. WeMeet, and application to find
+                            friend nearby is an Android application made by my team at centennial college last winter. Currently, I'm
+                            working on another android application aimed to solve grocery related problems.
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Section: Footer -->
+        <div data-role="footer" data-fullscreen="true"></div>
+    </div>
+</body>
+</html>
+
+<script src="Scripts/app/app.js"></script>
